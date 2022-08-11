@@ -1,0 +1,25 @@
+plugins {
+	//id 'org.springframework.boot' version '2.6.2'
+	//id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'java'
+}
+
+group = 'com.keycloak'
+version = 'v1.0'
+sourceCompatibility = '1.8'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	//implementation 'org.springframework.boot:spring-boot-starter'
+	//testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    compileOnly 'org.keycloak:keycloak-services:12.0.0'
+    compileOnly 'org.keycloak:keycloak-server-spi:12.0.0'
+    compileOnly 'org.keycloak:keycloak-server-spi-private:12.0.0'
+}
+
+test {
+	useJUnitPlatform()
+}
