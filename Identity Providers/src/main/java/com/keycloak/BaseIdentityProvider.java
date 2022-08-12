@@ -15,6 +15,7 @@ import org.keycloak.models.KeycloakSession;
 
 public class BaseIdentityProvider extends AbstractOAuth2IdentityProvider implements SocialIdentityProvider {
 
+	public static final String HOST = "https://kauth.kakao.com"; 			// OAUTH host 
 	public static final String AUTH_URL = ""; 		// 인증 
 	public static final String TOKEN_URL = "";  	// 토큰
 	public static final String PROFILE_URL = "";	// resource access url 
