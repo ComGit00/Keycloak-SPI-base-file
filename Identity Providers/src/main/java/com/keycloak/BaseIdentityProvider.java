@@ -15,11 +15,10 @@ import org.keycloak.models.KeycloakSession;
 
 public class BaseIdentityProvider extends AbstractOAuth2IdentityProvider implements SocialIdentityProvider {
 
-	public static final String HOST = ""; // OAUTH host 
-	public static final String AUTH_URL = ""; // 인증 
-	public static final String TOKEN_URL = "";  // 토큰
-	public static final String PROFILE_URL = ""; // resource access url 
-	public static final String DEFAULT_SCOPE = "";
+	public static final String AUTH_URL = ""; 		// 인증 
+	public static final String TOKEN_URL = "";  	// 토큰
+	public static final String PROFILE_URL = "";	// resource access url 
+	public static final String DEFAULT_SCOPE = "";	//	scope 값이 필요시
 
 	//	keycloak 연결시 기본 정보 세팅
 	public BaseIdentityProvider(KeycloakSession session, OAuth2IdentityProviderConfig config) {

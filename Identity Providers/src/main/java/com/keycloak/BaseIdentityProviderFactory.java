@@ -12,7 +12,7 @@ public class BaseIdentityProviderFactory extends AbstractIdentityProviderFactory
 
     @Override
     public String getName() {
-        return "base";
+        return PROVIDER_ID;
     }
 
     @Override
